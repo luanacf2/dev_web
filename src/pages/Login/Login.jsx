@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import { auth } from './firebase'; 
+import { useNavigate } from 'react-router-dom';
+import { auth } from '../../firebase'
 import './Estilo.css';
 
 const Login = () => {
-  const history = useHistory();
+  const history = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     senha: '',

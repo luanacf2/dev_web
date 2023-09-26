@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import { auth, firestore } from './firebase'; 
+import { useNavigate } from 'react-router-dom';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
 import './Estilo.css';
 
 const Cadastro = () => {
-  const history = useHistory();
+  const history = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     senha: '',

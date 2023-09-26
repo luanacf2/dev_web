@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { firestore, auth } from './firebase'; 
+import 'firebase/auth';
+import 'firebase/firestore';
 import './Estilo.css';
 
 const Principal = () => {
